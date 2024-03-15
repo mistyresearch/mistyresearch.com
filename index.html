@@ -1,14 +1,38 @@
 <html>
   <head>
+    <link
+      media="(prefers-color-scheme: light)"
+      rel="icon"
+      href="/favicon-black.svg"
+      sizes="any"
+    />
+    <link
+      media="(prefers-color-scheme: dark)"
+      rel="icon"
+      href="/favicon-white.svg"
+      sizes="any"
+    />
+    <title>misty research</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
     <div
-      class="min-h-screen min-w-screen flex items-center flex-col justify-center"
+      class="min-h-screen dark:bg-black bg-white min-w-screen flex items-center flex-col justify-center"
     >
-      <h1 class="text-2xl font-bold">mistysec</h1>
-      <p><a href="mailto:info@mistysec.com">info@mistysec.com</a></p>
+      <img
+        src="./logo-words-black.svg"
+        alt="Misty Research Logo"
+        class="w-full dark:hidden h-32"
+      />
+      <img
+        src="./logo-words-white.svg"
+        alt="Misty Research Logo"
+        class="w-full hidden dark:block h-32"
+      />
+      <h2 class="text-black mt-8 text-2xl dark:text-white">
+        <a href="mailto:info@mistysec.com">info@mistyresearch.com</a>
+      </h2>
     </div>
   </body>
 </html>
